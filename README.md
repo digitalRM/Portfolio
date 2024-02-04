@@ -5,6 +5,7 @@ Welcome to the repository of my simple, CV-inspired portfolio, bootstrapped with
 I wanted this portfolio to be rooted in simplicity and functionality, aiming to present information in a clear, concise manner while maintaining an aesthetic appeal.
 
   
+![Website](https://github.com/digitalRM/portfolio/assets/70782025/86155227-714c-4c8f-b61f-3ec04a0118b0)
 
 ## Built With
 
@@ -28,7 +29,7 @@ To get a local copy up and running, follow these steps:
 Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/digitalRM/portfolio.git
 ```
 
 Install required packages
