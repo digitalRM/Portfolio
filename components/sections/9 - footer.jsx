@@ -10,7 +10,7 @@ export default function Footer() {
             &copy; 2024 - Ruslan Mukhamedvaleev - All Rights Reserved.
           </p>
           <p className="sm:text-center mt-4 sm:mt-0 text-xs font-medium leading-5 text-neutral-900">
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-neutral-900 hover:text-neutral-800 transition-all">View Source Code <ArrowUpRight className='inline-block mb-0.5 -ml-0.5' size={16} /></a>
+            <a href="https://github.com/digitalRM/portfolio" target="_blank" rel="noopener noreferrer" className="text-neutral-900 hover:text-neutral-800 transition-all">View Source Code <ArrowUpRight className='inline-block mb-0.5 -ml-0.5' size={16} /></a>
           </p>
         </div>
       </div>
