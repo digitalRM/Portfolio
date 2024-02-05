@@ -13,7 +13,7 @@ import Footer from '@/components/sections/9 - footer'
 export default async function Home() {
   return (
     <div className="flex-col flex w-screen overflow-x-hidden scroll-smooth">  
-      <div className="relative h-screen overflow-w-hidden">
+      <div className="relative h-dvh overflow-w-hidden">
         <div className="mx-auto max-w-4xl px-6 pt-6 lg:pt-10 lg:px-8 relative">
           <Header />
           <AboutMe />

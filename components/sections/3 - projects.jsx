@@ -64,7 +64,7 @@ export default async function Projects() {
         <div className="flex justify-between items-center">
           <h1 className="font-semibold tracking-tight text-black text-xl">Highlighted Projects</h1>
           <a href="https://github.com/digitalRM" target="_blank" rel="noopener noreferrer" className='h-fit' >
-            <h1 className="font-semibold tracking-tight text-black text-sm">View Code On Github <ArrowUpRight className='inline-block w-4 h-4 -mr-1 text-neutral-950 transition-all' /></h1>
+            <h1 className="font-semibold tracking-tight text-black sm:text-sm text-xs">View Code<span className='sm:contents hidden'> On Github </span><ArrowUpRight className='inline-block w-4 h-4 -mr-1 text-neutral-950 transition-all' /></h1>
           </a>
         </div>
         <div className="mt-3 scale-[101%] border-b border-neutral-200" />
