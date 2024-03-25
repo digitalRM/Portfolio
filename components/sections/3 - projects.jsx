@@ -56,6 +56,31 @@ const projects = [
       link: 'https://github.com/EricBae21/Analysis-of-COVID-19',
       description: 'We won 1st in the Health Track and 2nd Place in the DubsTech\'s 4th Datathon for our exceptional Machine Learning Model.'
     },
+    {
+      title: 'UW CSE 455 Kernal Demo Site',
+      released: true,
+      badges: {
+        'React': 'border border-blue-500/15 text-blue-800 bg-blue-500/5 hover:bg-blue-500/5',
+        'Tailwind CSS': 'border border-blue-500/15 text-blue-800 bg-blue-500/5 hover:bg-blue-500/5',
+        'Headless UI': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
+      },
+      link: 'https://github.com/DerekZZhu/KernelCooker',
+      description: 'Designed & developed the front-end for the Kernel Demo Site for University Of Washington\'s CSE 455 class.'
+    },
+    {
+      title: 'Portfolio Website',
+      released: true,
+      badges: {
+        'Next.js': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
+        'Shadcn/UI': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
+        'Tailwind CSS': 'border border-blue-500/15 text-blue-800 bg-blue-500/5 hover:bg-blue-500/5',
+        'Figma': 'border border-purple-500/15 text-purple-800 bg-purple-500/5 hover:bg-purple-500/5',
+        'Skills Icons': 'border border-green-500/15 text-green-800 bg-green-500/5 hover:bg-green-500/5',
+        'Cloudflare': 'border border-orange-500/15 text-orange-800 bg-orange-500/5 hover:bg-orange-500/5',
+      },
+      link: 'https://github.com/digitalRM/portfolio',
+      description: 'Designed & developed the website you are currently viewing! Open sourced on Github.'
+    },
   ]
   
 export default async function Projects() {
