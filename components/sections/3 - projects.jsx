@@ -81,6 +81,21 @@ const projects = [
       link: 'https://github.com/digitalRM/portfolio',
       description: 'Designed & developed the website you are currently viewing! Open sourced on Github.'
     },
+    {
+      title: 'Accessible Articles',
+      released: true,
+      badges: {
+        'Next.js': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
+        'Shadcn/UI': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
+        'Python': 'border border-yellow-500/20 text-yellow-800 bg-yellow-500/15 hover:bg-yellow-500/15',
+        'Figma': 'border border-purple-500/15 text-purple-800 bg-purple-500/5 hover:bg-purple-500/5',
+        'Lucide React': 'border border-blue-500/15 text-blue-800 bg-blue-500/5 hover:bg-blue-500/5',
+        'Tailwind CSS': 'border border-blue-500/15 text-blue-800 bg-blue-500/5 hover:bg-blue-500/5',
+      },
+      link: 'https://github.com/digitalRM/CougHacks2024',
+      description: 'Washington State University\'s CougHacks 2024 project. We won 1st place! Our project was a web application that allows users to input a URL to an article and receive a more accessible version of the article.'
+      
+    }
   ]
   
 export default async function Projects() {
