@@ -17,22 +17,6 @@ const upcomingProjects = [
     company: 'Washington State University',
     description: 'Creating & developing the website for the WSU Ukrainian Book Project to host the tools, publications, and resources found and developed by our team.'
   },
-  {
-    title: '4Human MCF Collaboration',
-    released: false,
-    type: 'Soon',
-    badges: {
-      'Next.js': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
-      'Firebase': 'border border-orange-500/15 text-orange-800 bg-orange-500/5 hover:bg-orange-500/5',
-      'Shadcn/UI': 'border border-black/15 text-black bg-black/5 hover:bg-black/5',
-      'Tailwind CSS': 'border border-blue-500/15 text-blue-800 bg-blue-500/5 hover:bg-blue-500/5',
-      'Figma': 'border border-purple-500/15 text-purple-800 bg-purple-500/5 hover:bg-purple-500/5',
-      'Cloudflare': 'border border-orange-500/15 text-orange-800 bg-orange-500/5 hover:bg-orange-500/5',
-    },
-    company: '4Human Corporation',
-    description: 'Leading a team of 10 developers through the development of the front-end interface for the 4Human Murphy Charitable Foundation collaboration.'
-
-  },
 ]
 
 export default async function UpcomingProjects() {

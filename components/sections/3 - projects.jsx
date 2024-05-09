@@ -13,7 +13,7 @@ const projects = [
         'Cloudflare': 'border border-orange-500/15 text-orange-800 bg-orange-500/5 hover:bg-orange-500/5',
       },
       link: 'https://www.4human.co/',
-      description: 'Designed & developed the front-end interface for the 4Human website.'
+      description: 'Designed & developed the 4Human website.'
     },
     {
       title: 'FOYM Website',
@@ -25,7 +25,7 @@ const projects = [
         'Cloudflare': 'border border-orange-500/15 text-orange-800 bg-orange-500/5 hover:bg-orange-500/5',
       },
       link: 'https://www.foym.org/',
-      description: 'Designed & developed the landing page for the FOYM website. '
+      description: 'Designed & developed the FOYM website. '
     },
     {
       title: 'Mukilteo Robotics Website',

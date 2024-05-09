@@ -25,7 +25,7 @@ export default async function Header() {
     <div className="flex md:pt-12 flex-col-reverse sm:flex-row sm:justify-between sm:items-center">
       <div className='mt-10 sm:mt-3'>
         <h1 className="font-semibold tracking-tight text-black text-xl">Ruslan Mukhamedvaleev</h1>
-        <p className="mt-2 text-sm sm:text-base leading-6 max-w-[570px] text-neutral-800/80">Interested in web development, research, and design.</p>
+        <p className="mt-2 text-sm sm:text-base leading-6 max-w-[570px] text-neutral-800/80">Interested in machine learning, research, and design.</p>
         <div className="mt-6 flex gap-1 flex-col sm:flex-row ">
           {social.map((link) => (
             <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="transition-all inline-flex items-center px-3 py-2 border text-sm leading-4 font-medium rounded-md text-neutral-800/80 bg-neutral-100 hover:bg-neutral-200/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-500 w-full sm:w-fit border-neutral-200/50 hover:border-neutral-200/75">

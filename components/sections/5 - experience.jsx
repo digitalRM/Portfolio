@@ -2,16 +2,10 @@
 
 const roles = [
   {
-    title: 'Director of Front-End Development',
-    company: '4Human Corporation',
-    date: 'Dec 2023 - Present',
-    description: 'Directing front-end development for the entire 4Human organization. Personally designing and developing the 4Human website. Leading a team of 10+ college developers in creating and developing front-end interfaces for a full-stack application, built in collaboration with the Murphy Charitable Foundation in Uganda.'
-  },
-  {
     title: 'Research Intern',
     company: 'Washington State University',
     date: 'Aug 2023 - Present',
-    description: 'Working alongside Gabriella Reznowski and Emily Cukier to develop tools to ensure the availability of cataloging records for Ukrainian books. The project seeks to address the problem of identifying which US libraries have already collected Ukrainian language materials. By discovering which US libraries were already successfully collecting Ukrainian language books, we hoped to collect useful information on vendors and suppliers for Ukrainian books, in order to help libraries with limited collections navigate this collections area.'
+    description: 'Working alongside Gabriella Reznowski and Emily Cukier to develop tools to ensure the availability of cataloging records for Ukrainian books. By discovering which US libraries were already successfully collecting Ukrainian language books, we hoped to collect useful information on vendors and suppliers for Ukrainian books, in order to help libraries with limited collections navigate this collections area. Researching, analyzing, and writing about this for publication in a research paper. '
   },
   {
     title: 'Founder, Executive Director',
@@ -23,14 +17,20 @@ const roles = [
     title: 'Council Member',
     company: 'Legislative Youth Advisory Council (LYAC)',
     date: 'July 2023 - Present',
-    description: 'One of twelve students selected by the lieutenant governor\'s office from across Washington State to serve as a youth advisor to state legislators. Working to amplify the voices of all 1.6 million young people in Washington State. Serving as a council member for the Legislative Youth Advisory Council (LYAC) in Washington State. Panelist for the 2023 Washington State LYAC Action Day.'
+    description: 'One of twelve students selected by the lieutenant governor\'s office from across Washington State to serve as a youth advisor to state legislators. Working on language access in education legislation to help ELL students across our state get the support they need. Helping amplify the voices of all 1.6 million young people in Washington State. Panelist for the 2023 Washington State LYAC Action Day.'
   },
   {
     title: 'Deputy Executive Director, Director of Public Relations, Team Captain.',
     company: 'Mukilteo Robotics',
     date: 'Nov 2022 - Present',
-    description: 'Helping guide over 40+ active members twice a week through the VEX Robotics Competitive program, providing students from around the area with free access to the competitive & highly expensive program. Managing the public relations and marketing for the Mukilteo Robotics organization. Leading efforts to recruit new members and fostering a supportive & inclusive environment.'
-  }
+    description: 'Grew the organization to 45 active members who participated during the 2023 - 2024 season as competitors or collegiate mentors (an increase from 23 total members the previous season with a YoY growth of 96%). Helped raise almost $30,000 in funding for the organization.'
+  },
+  {
+    title: 'Director of Front-End Development',
+    company: '4Human Corporation',
+    date: 'Dec 2023 - Present',
+    description: 'Directing front-end development for the entire 4Human organization. Personally executing the development of the 4Human website. Overseeing developers creating and developing front-end interfaces for multiple full-stack applications built in collaboration with other organizations.'
+  },
 ]
   
 
