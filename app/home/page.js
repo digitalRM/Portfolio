@@ -1,12 +1,21 @@
-
+'use client'
 
 import { Bricolage_Grotesque } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 export const bricolage_grotesque = Bricolage_Grotesque({ subsets: ["latin"] })
 
+
+
 export default async function Home() {
+
+  const { scrollYProgress } = useScroll(1000)
+  
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.6])
+  const minScale = useTransform(scrollYProgress, [0, 1], [1, 0.6])
+
   return (
     <div className="flex-col relative flex w-screen scroll-smooth items-center p-4">  
       <div className="  top-0 z-20 overflow-w-hidden flex items-end justify-between w-full my-4">
@@ -20,14 +29,14 @@ export default async function Home() {
         </div>
       </div>
       
-      <div className="w-full flex sm:items-end h-screen max-h-[1000px] max-w-[1480px] overflow-x-hidden bg-slate-100 rounded-xl bg-[url('/hero-low.webp')] bg-cover mt-4 relative">
+      <motion.div style={{ scaleX: scale }}  className="w-full flex sm:items-end h-screen max-h-[1000px] max-w-[1480px] overflow-x-hidden bg-slate-100 rounded-xl bg-[url('/hero-low.webp')] bg-cover mt-4 relative">
         <video autoPlay loop muted playsInline className="w-full h-full object-cover absolute top-0 left-0 z-0" src="/hero-vid2.mp4"></video>
           <div className="pb-32 pt-20 text-left relative z-10 sm:text-center lg:pt-44 mx-auto mt lg:max-w-full md:max-w-2xl sm:max-w-xl px-4 sm:px-6 lg:px-8 ">
-            <h1 className="sm:mx-auto sm:max-w-3xl lg:text-7xl font-bold max-w-[326px] lg:text-nowrap tracking-tighter  md:tracking-[-0.3rem] text-white md:text-6xl sm:text-5xl text-left text-3xl sm:text-center">
-              <span className={bricolage_grotesque.className}>
+            <motion.h1 style={{ scale: minScale }} className="sm:mx-auto sm:max-w-3xl lg:text-7xl font-bold max-w-[326px] lg:text-nowrap tracking-tighter  md:tracking-[-0.3rem] text-white md:text-6xl sm:text-5xl text-left text-3xl sm:text-center">
+              <motion.span style={{ scale: minScale }} className={bricolage_grotesque.className}>
                 Ruslan Mukhamedvaleev
-              </span>
-            </h1>
+              </motion.span>
+            </motion.h1>
             <p className="mx-auto mt-3 max-w-lg text-xl tracking-tight text-white ">
               Student, Researcher, and Founder
             </p>
@@ -37,7 +46,7 @@ export default async function Home() {
             </div>
           </div>
 
-      </div>
+      </motion.div>
 
       <div className="w-full h-[1300px] max-w-[1480px] overflow-show rounded-xl grid md:grid-cols-2 gap-3 my-3">
         <div className="col-span-1 row-span-1 bg-neutral-100 rounded-xl border shadow border-neutral-200 flex p-6">
