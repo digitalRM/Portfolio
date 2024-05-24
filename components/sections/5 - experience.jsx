@@ -2,7 +2,7 @@
 
 const roles = [
   {
-    title: 'Research Intern',
+    title: 'Research Assistant',
     company: 'Washington State University',
     date: 'Aug 2023 - Present',
     description: 'Working alongside Gabriella Reznowski and Emily Cukier to develop tools to ensure the availability of cataloging records for Ukrainian books. By discovering which US libraries were already successfully collecting Ukrainian language books, we hoped to collect useful information on vendors and suppliers for Ukrainian books, in order to help libraries with limited collections navigate this collections area. Researching, analyzing, and writing about this for publication in a research paper. '
