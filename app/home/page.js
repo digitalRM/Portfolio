@@ -16,8 +16,9 @@ export default async function Home() {
   const scale = useTransform(scrollYProgress, [0, 0.3], [1, 2])
   const minScale = useTransform(scrollYProgress, [0, 0.05], [1, 0.9])
   const opacity = useTransform(scrollYProgress, [0, 0.05], [0, 1])
+  const opacityOfVideo = useTransform(scrollYProgress, [0, 0.01], [1, 0])
   const opacityOfCards = useTransform(scrollYProgress, [0, 0.1], [0, 1])
-  const background = useTransform(scrollYProgress, [0, 0.1], ["#FFF", "#000"])
+  const background = useTransform(scrollYProgress, [0, 0.05], ["#FFF", "#2f3e46"])
   const backgroundSwap = useTransform(scrollYProgress, [0, 0.1], ["#000", "#FFF"])
 
   return (
@@ -33,7 +34,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <motion.h1 style={{ scale: minScale }} className="sm:mx-auto sm:max-w-3xl absolute z-50 mt-[80vh] lg:text-7xl font-bold max-w-[326px] lg:text-nowrap tracking-tighter  md:tracking-[-0.3rem] text-white md:text-6xl sm:text-5xl text-left text-3xl sm:text-center">
+      <motion.h1 style={{ scale: minScale }} className="sm:mx-auto sm:max-w-3xl absolute z-50 mt-[80vh] lg:text-7xl font-bold max-w-[326px] lg:text-nowrap tracking-tighter  md:tracking-[-0.3rem] text-[#FFF] md:text-6xl sm:text-5xl text-left text-3xl sm:text-center">
         <motion.span style={{ scale: minScale }} className={bricolage_grotesque.className}>
           Ruslan Mukhamedvaleev
         </motion.span>
@@ -43,12 +44,12 @@ export default async function Home() {
       </motion.p>
       
       <motion.div style={{ scale: scale }}  className="w-full sticky top-12 flex sm:items-end h-screen max-w-[1480px] overflow-x-hidden bg-slate-100 rounded-xl bg-[url('/hero-low.webp')] bg-cover mt-4 ">
-        <motion.div style={{ opacity: opacity}} className="w-full bg-black h-full absolute top-0 left-0 z-20"></motion.div>
-        <video autoPlay loop muted playsInline className="w-full h-full object-cover absolute top-0 left-0 z-0" src="/hero-vid2.mp4"></video>
-          <div className="pb-32 pt-20 text-left relative z-10 sm:text-center lg:pt-44 mx-auto mt lg:max-w-full md:max-w-2xl sm:max-w-xl px-4 sm:px-6 lg:px-8 ">
+        <motion.div style={{ opacity: opacity}} className="w-full bg-[#2f3e46] h-full absolute top-0 left-0 z-20"></motion.div>
+        <video style={{ opacity: opacityOfVideo}} autoPlay loop muted playsInline className="w-full h-full object-cover absolute top-0 left-0 z-0" src="/hero-vid2.mp4"></video>
+          <div style={{ opacity: opacityOfVideo}} className="pb-32 pt-20 text-left relative z-10 sm:text-center lg:pt-44 mx-auto mt lg:max-w-full md:max-w-2xl sm:max-w-xl px-4 sm:px-6 lg:px-8 ">
             
 
-            <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 flex-col sm:flex-row gap-4 sm:gap-0">
+            <div style={{ opacity: opacityOfVideo}} className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 flex-col sm:flex-row gap-4 sm:gap-0">
               
             </div>
           </div>
