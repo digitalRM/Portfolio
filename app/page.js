@@ -18,7 +18,7 @@ export default async function Home() {
           <Header />
           <AboutMe />
           <Projects />
-          <UpcomingProjects />
+          {/* <UpcomingProjects /> */}
           <Experience />
           <Education />
           <Skills />

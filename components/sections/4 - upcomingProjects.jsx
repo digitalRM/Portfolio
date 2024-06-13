@@ -27,7 +27,7 @@ export default async function UpcomingProjects() {
       <div className="mt-6 grid sm:grid-cols-2 gap-4">
         {upcomingProjects.map((project) => (
           <div key={project.company} className='bg-neutral-100/50 cursor-not-allowed group p-6 rounded-lg sm:justify-between border-neutral-200/50 border transition-all w-full flex flex-col justify-between'>
-            <div>
+            <div className=''>
               <div className="flex justify-between">
                 <h1 className="text-base font-semibold">{project.title}</h1>
               </div>

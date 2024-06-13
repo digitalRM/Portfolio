@@ -5,7 +5,7 @@ const education = [
     name: 'Kamiak High School',
     location: 'Mukilteo, Washington',
     graduation: '2026',
-    gpa: '4.0/4.0',
+    gpa: '4.000/4.000',
     extracurriculars: 'President of Kamiak Robotics Club, School Council Representative, Technology Student Association, Computer Science Club.'
   }
 ]
