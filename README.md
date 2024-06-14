@@ -4,8 +4,7 @@ Welcome to the repository of my simple, CV-inspired portfolio, bootstrapped with
 
 I wanted this portfolio to be rooted in simplicity and functionality, aiming to present information in a clear, concise manner while maintaining an aesthetic appeal.
 
-  
-![Website](https://github.com/digitalRM/portfolio/assets/70782025/86155227-714c-4c8f-b61f-3ec04a0118b0)
+![Website](https://github.com/digitalRM/portfolio/assets/70782025/f11864e1-b241-4eef-b0ab-a7b8749fba61)
 
 ## Built With
 
