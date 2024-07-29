@@ -20,7 +20,7 @@ export default async function Home() {
           <Projects />
           {/* <UpcomingProjects /> */}
           <Experience />
-          <Education />
+          {/* <Education /> */}
           <Skills />
           <Publications />
           <Footer />
