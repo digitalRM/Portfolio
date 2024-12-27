@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
               "@id": "https://www.ruslan.in/#person",
               "name": "Ruslan Mukhamedvaleev",
               "givenName": "Ruslan",
-              "familyName": "Mukhamedvaleev",
+              "familyName": "Mukhamedvaleev", 
               "description": "Student researcher and developer focused on design, machine learning, and web development. Co-Founder of Koel Labs, Founder of FOYM, and Research Assistant at Washington State University.",
               "url": "https://www.ruslan.in",
               "image": "https://www.ruslan.in/openGraph.png",
@@ -124,7 +124,7 @@ export default function RootLayout({ children }) {
                   "@type": "Organization", 
                   "name": "FOYM",
                   "url": "https://www.foym.org"
-                },
+                }
               ]
             }
           `}
