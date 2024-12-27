@@ -16,6 +16,7 @@ const projects = [
     released: true,
     image: "/koel.jpeg",
     link: "https://koellabs.com/",
+    description: "Official website for Koel Labs",
   },
   {
     title: "FOYM Website",
@@ -40,6 +41,8 @@ const projects = [
     released: true,
     image: "/ubp.jpeg",
     link: "https://www.ukrainianbookproject.com/",
+    description:
+      "Platform for tracking Ukrainian language collections in US libraries.",
   },
   {
     title: "UW CSE 455 Kernal Demo Site",
@@ -64,6 +67,7 @@ const projects = [
     released: true,
     image: "/waYouth.jpeg",
     link: "https://www.washingtonyouthalliance.org/",
+    description: "Official website for Washington Youth Alliance organization.",
   },
   {
     title: "Accessible Articles",
@@ -110,7 +114,7 @@ const projects = [
       "I designed and developed the website for Mukilteo Robotics, a local non-profit organization that provides free competitive robotics access in the Mukilteo area. I wanted the design to have a professional and modern look to solidify and legitimize the organization for sponsor outreach.",
   },
   {
-    title: "COVID-19 Machine Learning Analysis - DubsTech Datathon 23",
+    title: "COVID-19 Machine Learning Analysis",
     released: true,
     badges: {
       Python:
@@ -137,21 +141,28 @@ const projects = [
 
 export default async function Projects() {
   return (
-    <div className="mt-12">
+    <section aria-labelledby="projects-heading" className="mt-12">
       <div className="flex justify-between items-center">
-        <h1 className="font-semibold tracking-tight text-black text-xl">
+        <h2
+          id="projects-heading"
+          className="font-semibold tracking-tight text-black text-xl"
+        >
           Highlighted Projects
-        </h1>
+        </h2>
         <a
           href="https://github.com/digitalRM"
           target="_blank"
           rel="noopener noreferrer"
           className="h-fit"
+          aria-label="View more projects on GitHub"
         >
-          <h1 className="font-semibold tracking-tight text-black sm:text-sm text-xs">
+          <h3 className="font-semibold tracking-tight text-black sm:text-sm text-xs">
             View More<span className="sm:contents hidden"> On Github </span>
-            <ArrowUpRight className="inline-block w-4 h-4 -mr-1 text-neutral-950 transition-all" />
-          </h1>
+            <ArrowUpRight
+              className="inline-block w-4 h-4 -mr-1 text-neutral-950 transition-all"
+              aria-hidden="true"
+            />
+          </h3>
         </a>
       </div>
       <div className="mt-3 scale-[101%] border-b border-neutral-200" />
@@ -166,25 +177,33 @@ export default async function Projects() {
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={project.title} className="">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <div className="bg-neutral-100/50 hover:scale-[102%] group p-2 border-neutral-200 border rounded-[12px] border-neutral-200/50 hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
-                  <div className="rounded-[8px] w-full h-fit bg-neutral-100 group-hover:bg-neutral-100/50 transition-all border-neutral-200 border">
-                    <Image
-                      src={project.image}
-                      height={400}
-                      width={822}
-                      alt={project.title + "designed by Ruslan Mukhamedvaleev"}
-                      className="rounded-[6px] transition-all"
-                    />
+              <article itemScope itemType="https://schema.org/CreativeWork">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${project.title} project`}
+                >
+                  <div className="bg-neutral-100/50 hover:scale-[102%] group p-2 border-neutral-200 border rounded-[12px] border-neutral-200/50 hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
+                    <div className="rounded-[8px] w-full h-fit bg-neutral-100 group-hover:bg-neutral-100/50 transition-all border-neutral-200 border">
+                      <Image
+                        src={project.image}
+                        height={400}
+                        width={822}
+                        alt={`Screenshot of ${project.title} - ${project.description}`}
+                        className="rounded-[6px] transition-all"
+                        itemProp="image"
+                      />
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </article>
             </CarouselItem>
           ))}
         </CarouselContent>
         <CarouselPrevious className="data-[current-index='0']:hidden data-[current-index]:block" />
         <CarouselNext className="data-[current-index='4']:hidden data-[current-index]:block" />
       </Carousel>
-    </div>
+    </section>
   );
 }

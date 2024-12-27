@@ -18,12 +18,12 @@ const roles = [
     items: [
       {
         image: "/wsu.png",
-        alt: "Washington State University",
+        alt: "Washington State University logo",
         link: "https://www.ukrainianbookproject.com/",
       },
       {
         image: "/wsu-poster.png",
-        alt: "WSU Academic Showcase 24 Poster",
+        alt: "Research poster for WSU Academic Showcase 2024",
         link: "https://www.figma.com/design/a587LZy952mJq3tZyj4hvF/Mapping-Ukrainian-collections-in-U.S.-public-libraries%E2%80%8B?node-id=0-1&t=LOb1BWCWKX4nmtmA-1",
       },
     ],
@@ -108,43 +108,57 @@ const roles = [
 
 export default async function Experience() {
   return (
-    <div className="mt-12">
-      <h1 className="font-semibold tracking-tight text-black text-xl">
+    <section aria-labelledby="experience-heading" className="mt-12">
+      <h2
+        id="experience-heading"
+        className="font-semibold tracking-tight text-black text-xl"
+      >
         Experience
-      </h1>
-      <div className="mt-3 scale-[101%]  border-b border-neutral-200 " />
+      </h2>
+      <div className="mt-3 scale-[101%] border-b border-neutral-200" />
       {roles.map((role) => (
-        <div key={role.company} className="mt-6">
+        <article
+          key={role.company}
+          className="mt-6"
+          itemScope
+          itemType="https://schema.org/WorkExperience"
+        >
           <div className="flex">
-            {/* <div className="flex">
-              <Image
-                src={role.icon || "/wsu.png"}
-                alt={role.company}
-                width={60}
-                height={60}
-                className="rounded-md border border-neutral-400/50 shadow-inner mr-2"
-              />
-            </div> */}
             <div>
-              <h2 className="text-lg tracking-tight font-semibold">
+              <h3
+                className="text-lg tracking-tight font-semibold"
+                itemProp="jobTitle"
+              >
                 {role.title}
-              </h2>
+              </h3>
               {role.previousTitle && (
-                <p className="mt-1 mb-1 text-sm sm:text-base font-medium leading-4 text-neutral-800/60 italic">
+                <p
+                  className="mt-1 mb-1 text-sm sm:text-base font-medium leading-4 text-neutral-800/60 italic"
+                  itemProp="alternateName"
+                >
                   Previously: {role.previousTitle}
                 </p>
               )}
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:justify-between">
-            <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
+            <p
+              className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
+              itemProp="hiringOrganization"
+            >
               {role.company}
             </p>
-            <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
+            <p
+              className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
+              itemProp="dateOccupied"
+            >
               {role.date}
             </p>
           </div>
-          <div className="mt-2 text-sm sm:text-base leading-6 text-neutral-600/80">
+          <div
+            className="mt-2 text-sm sm:text-base leading-6 text-neutral-600/80"
+            itemProp="responsibilities"
+          >
             <ol className="list-outside ml-4">
               {role.description.map((desc, index) => (
                 <li key={index} className="mt-2 list-outside list-disc">
@@ -168,19 +182,21 @@ export default async function Experience() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 mr-2 rounded-md relative shadow-sm h-20"
+                  aria-label={`View ${item.alt}`}
                 >
                   <Image
                     src={item.image}
                     alt={item.alt}
                     fill
                     className="rounded-md object-cover border aspect-video border-neutral-400/50 shadow-inner w-full"
+                    itemProp="image"
                   />
                 </a>
               ))}
             </div>
           )}
-        </div>
+        </article>
       ))}
-    </div>
+    </section>
   );
 }

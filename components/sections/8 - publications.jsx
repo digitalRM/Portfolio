@@ -17,17 +17,17 @@ const publications = [
   },
   {
     title:
-      "14 AI projects to watch: Mozilla’s first Builders Accelerator cohort kicks off",
+      "14 AI projects to watch: Mozilla's first Builders Accelerator cohort kicks off",
     date: "September 2024",
     released: true,
     badge: "News",
     company: "Mozilla",
     image: "/mozilla.png",
     imageAlt:
-      "14 AI projects to watch: Mozilla’s first Builders Accelerator cohort kicks off",
+      "14 AI projects to watch: Mozilla's first Builders Accelerator cohort kicks off",
     link: "https://blog.mozilla.org/en/mozilla/14-ai-projects-to-watch-mozillas-first-builders-accelerator-cohort-kicks-off/",
     short:
-      "Calling on AI and machine learning engineers passionate about open source and local AI, nearly 200 applicants from 44 countries stepped up to push the boundaries of what’s possible with running models directly on personal devices instead of relying on the cloud. After a rigorous review process, we’re thrilled to announce the 14 groundbreaking projects that made the cut, each earning up to $100,000 in funding and mentorship from Mozilla.",
+      "Calling on AI and machine learning engineers passionate about open source and local AI, nearly 200 applicants from 44 countries stepped up to push the boundaries of what's possible with running models directly on personal devices instead of relying on the cloud.",
   },
   {
     title:
@@ -47,22 +47,42 @@ const publications = [
 
 export default async function Publications() {
   return (
-    <div className="mt-12">
-      <h1 className="font-semibold tracking-tight text-black text-xl">
+    <section aria-labelledby="publications-heading" className="mt-12">
+      <h2
+        id="publications-heading"
+        className="font-semibold tracking-tight text-black text-xl"
+      >
         Publications
-      </h1>
-      <div className="mt-3 scale-[101%]  border-b border-neutral-200" />
+      </h2>
+      <div className="mt-3 scale-[101%] border-b border-neutral-200" />
       <div className="mt-6 grid grid-cols-3 gap-4">
-        {publications.map((news) => (
-          <div key={news.company} className="col-span-3">
-            {news.released == true ? (
-              <a href={news.link} target="_blank" rel="noopener noreferrer">
+        {publications.map((pub) => (
+          <article
+            key={pub.title}
+            className="col-span-3"
+            itemScope
+            itemType={
+              pub.badge === "Research"
+                ? "https://schema.org/ScholarlyArticle"
+                : "https://schema.org/NewsArticle"
+            }
+          >
+            {pub.released ? (
+              <a
+                href={pub.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Read ${pub.title}`}
+              >
                 <div className="mt-0 bg-neutral-100/50 p-6 rounded-lg flex flex-col sm:flex-row sm:justify-between border-neutral-200/50 border hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
                   <div>
                     <div className="flex justify-between">
-                      <h2 className="text-base font-semibold">
-                        {news.company}
-                      </h2>
+                      <h3
+                        className="text-base font-semibold"
+                        itemProp="publisher"
+                      >
+                        {pub.company}
+                      </h3>
                       <Badge
                         style={{
                           height: "fit-content",
@@ -70,26 +90,36 @@ export default async function Publications() {
                           paddingBottom: "4px",
                         }}
                         className={
-                          news.badge === "News"
+                          pub.badge === "News"
                             ? "bg-black-300/5 border hover:bg-black-300/5 border-black/10 text-black"
                             : "bg-purple-500/10 text-purple-700 border border-purple-500/30"
                         }
                       >
-                        {" "}
-                        {news.badge}{" "}
+                        {pub.badge}
                       </Badge>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:justify-between">
-                      <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
-                        {news.title}
+                      <p
+                        className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
+                        itemProp="headline"
+                      >
+                        {pub.title}
                       </p>
-                      <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
-                        {news.date}
+                      <p
+                        className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
+                        itemProp="datePublished"
+                      >
+                        {pub.date}
                       </p>
                     </div>
-                    <p className="mt-2 text-sm sm:text-base leading-6 text-neutral-700/75">
-                      {news.short}
+                    <p
+                      className="mt-2 text-sm sm:text-base leading-6 text-neutral-700/75"
+                      itemProp="abstract"
+                    >
+                      {pub.short}
                     </p>
+                    <meta itemProp="author" content={pub.company} />
+                    <meta itemProp="image" content={pub.image} />
                   </div>
                 </div>
               </a>
@@ -97,7 +127,12 @@ export default async function Publications() {
               <div className="mt-0 cursor-not-allowed bg-neutral-100/50 p-6 rounded-lg flex flex-col sm:flex-row sm:justify-between border-neutral-200/50 border hover:border-neutral-300/50 hover:bg-neutral-200/60 transition-all">
                 <div>
                   <div className="flex justify-between">
-                    <h2 className="text-base font-semibold">{news.company}</h2>
+                    <h3
+                      className="text-base font-semibold"
+                      itemProp="publisher"
+                    >
+                      {pub.company}
+                    </h3>
                     <Badge
                       style={{
                         height: "fit-content",
@@ -105,32 +140,42 @@ export default async function Publications() {
                         paddingBottom: "4px",
                       }}
                       className={
-                        news.badge === "News"
+                        pub.badge === "News"
                           ? "bg-blue-300/5 border border-black/10 text-black"
                           : "bg-purple-500/10 text-purple-700 border border-purple-500/30 hover:bg-purple-500/10"
                       }
                     >
-                      {" "}
-                      {news.badge}{" "}
+                      {pub.badge}
                     </Badge>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:justify-between">
-                    <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
-                      {news.title}
+                    <p
+                      className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
+                      itemProp="headline"
+                    >
+                      {pub.title}
                     </p>
-                    <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
-                      {news.date}
+                    <p
+                      className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
+                      itemProp="datePublished"
+                    >
+                      {pub.date}
                     </p>
                   </div>
-                  <p className="mt-2 text-sm sm:text-base leading-6 text-neutral-700/75">
-                    {news.short}
+                  <p
+                    className="mt-2 text-sm sm:text-base leading-6 text-neutral-700/75"
+                    itemProp="abstract"
+                  >
+                    {pub.short}
                   </p>
+                  <meta itemProp="author" content={pub.company} />
+                  <meta itemProp="image" content={pub.image} />
                 </div>
               </div>
             )}
-          </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
