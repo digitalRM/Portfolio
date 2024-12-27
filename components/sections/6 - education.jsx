@@ -6,7 +6,7 @@ const education = [
     location: "Mukilteo, Washington",
     graduation: "2026",
     gpa: "4.000/4.000",
-    url: "https://khs.mukilteo.wednet.edu/",
+    url: "https://ka.mukilteoschools.org/",
     extracurriculars: [
       "President of Kamiak Robotics Club, ",
       " School Council Representative, ",
