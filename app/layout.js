@@ -77,56 +77,61 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <Script id="schema-org" type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "@id": "https://www.ruslan.in/#person",
-            name: "Ruslan Mukhamedvaleev",
-            givenName: "Ruslan",
-            familyName: "Mukhamedvaleev",
-            description:
-              "Student researcher and developer focused on design, machine learning, and web development. Co-Founder of Koel Labs, Founder of FOYM, and Research Assistant at Washington State University.",
-            url: "https://www.ruslan.in",
-            image: "https://www.ruslan.in/openGraph.png",
-            sameAs: [
-              "https://github.com/digitalRM",
-              "https://www.linkedin.com/in/ruslan-muk/",
-              "https://www.instagram.com/ruslan_mk11/",
-              "https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/",
-            ],
-            alumniOf: {
-              "@type": "HighSchool",
-              name: "Kamiak High School",
-              location: "Mukilteo, Washington",
-            },
-            worksFor: [
-              {
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://www.ruslan.in/#person",
+              "name": "Ruslan Mukhamedvaleev",
+              "givenName": "Ruslan",
+              "familyName": "Mukhamedvaleev", 
+              "description": "Student researcher and developer focused on design, machine learning, and web development. Co-Founder of Koel Labs, Founder of FOYM, and Research Assistant at Washington State University.",
+              "url": "https://www.ruslan.in",
+              "image": "https://www.ruslan.in/openGraph.png",
+              "sameAs": [
+                "https://github.com/digitalRM",
+                "https://www.linkedin.com/in/ruslan-muk/",
+                "https://www.instagram.com/ruslan_mk11/",
+                "https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/"
+              ],
+              "alumniOf": {
                 "@type": "Organization",
-                name: "Koel Labs",
-                url: "https://koellabs.com",
+                "name": "Kamiak High School",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Mukilteo",
+                  "addressRegion": "Washington"
+                }
               },
-              {
-                "@type": "Organization",
-                name: "Washington State University",
-                url: "https://wsu.edu",
-              },
-              {
-                "@type": "Organization",
-                name: "Mukilteo Robotics",
-                url: "https://www.mukilteorobotics.org",
-              },
-              {
-                "@type": "Organization",
-                name: "Legislative Youth Advisory Council",
-                url: "https://walyac.org",
-              },
-              {
-                "@type": "Organization",
-                name: "FOYM",
-                url: "https://www.foym.org",
-              },
-            ],
-          })}
+              "affiliation": [
+                {
+                  "@type": "Organization",
+                  "name": "Koel Labs",
+                  "url": "https://koellabs.com"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Washington State University",
+                  "url": "https://wsu.edu"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Mukilteo Robotics",
+                  "url": "https://www.mukilteorobotics.org"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Legislative Youth Advisory Council",
+                  "url": "https://walyac.org"
+                },
+                {
+                  "@type": "Organization", 
+                  "name": "FOYM",
+                  "url": "https://www.foym.org"
+                }
+              ]
+            }
+          `}
         </Script>
       </head>
       <body style={{ background: "#FFF" }} className={inter.className}>
