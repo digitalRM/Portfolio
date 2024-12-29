@@ -4,7 +4,7 @@ Welcome to the repository of my simple, CV-inspired portfolio, bootstrapped with
 
 I wanted this portfolio to be rooted in simplicity and functionality, aiming to present information in a clear, concise manner while maintaining an aesthetic appeal.
 
-![Website](https://github.com/digitalRM/portfolio/assets/70782025/f11864e1-b241-4eef-b0ab-a7b8749fba61)
+![Ruslan Mukhamedvaleev - Student_ Researcher _ Developer](https://github.com/user-attachments/assets/5d239e0f-24f3-43e6-b7a0-11db715e2702)
 
 ## Built With
 
