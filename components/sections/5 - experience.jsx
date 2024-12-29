@@ -4,6 +4,28 @@ import Image from "next/image";
 
 const roles = [
   {
+    title: "Co-Founder, Chief Product Officer",
+    company: "Koel Labs",
+    date: "Aug 2024 - Present",
+    description: [
+      "Lead design and development of MVP shown off at Mozilla Builders Demo Day.",
+      "Designed and developed the brand from the ground up, from logos to graphics to typography, culminating in a new website and brand materials.",
+      "Leading product design and development, including brand identity, landing page, web application UI/UX, and user research to create an intuitive and cohesive experience.",
+    ],
+    items: [
+      {
+        image: "/koelLabs.png",
+        alt: "Koel Labs",
+        link: "https://www.koellabs.com/",
+      },
+      {
+        image: "/mozilla.png",
+        alt: "Mozilla Builders Cohort 2024",
+        link: "https://builders.mozilla.org/programs/?tab=cohorts",
+      },
+    ],
+  },
+  {
     title: "Research Assistant",
     previousTitle: "Research Intern",
     company: "Washington State University",

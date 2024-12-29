@@ -30,12 +30,32 @@ const publications = [
       "Calling on AI and machine learning engineers passionate about open source and local AI, nearly 200 applicants from 44 countries stepped up to push the boundaries of what's possible with running models directly on personal devices instead of relying on the cloud.",
   },
   {
+    title: "Mapping Ukrainian Collections in US Public Libraries",
+    date: "May 2024",
+    released: true,
+    badge: "Research",
+    company: "Washington State University - Ukrainian Book Project",
+    link: "https://www.ukrainianbookproject.com/publications/mapping-ukrainian-collections-in-us-public-libraries",
+    short:
+      "In order to facilitate the acquisition pipeline for libraries developing new Ukrainian language collections, we sought to identify libraries with strong existing collections, as well as those libraries that may need assistance with building these collections. We used OCLC data on Ukrainian language titles and their holding libraries. Two Washington State high school students with data science skills assisted us in the process, creating an interactive map showing the location of Ukrainian books in American libraries. We hope this map will be useful for improving the state of Ukrainian language collections to serve communities in the United States.",
+  },
+
+  {
+    title: "Exploring Ukrainian Language Collections in US Libraries",
+    date: "November 2024",
+    released: true,
+    badge: "Research",
+    company: "Washington State University - Ukrainian Book Project",
+    short:
+      "Ukrainian advocacy groups have tried to encourage collecting at U.S. libraries but have been met with resistance, and continued efforts are slow. Many US libraries don't know where to order Ukrainian books, which ones to choose from, or how to catalog them, especially if they don't have Ukrainian speakers on staff. This project aims to shed light on the landscape of collecting. It is the first step for us to identify and overcome barriers to building Ukrainian collections in US public libraries..",
+  },
+  {
     title:
       "The State of Ukrainian Language Library Collections in U.S. Public Libraries",
     date: "TBD 2025",
     released: false,
     badge: "Research",
-    company: "Washington State University",
+    company: "Washington State University - Ukrainian Book Project",
     image:
       "https://www.mukilteobeacon.com/home/cms_data/dfault/photos/stories/id/9/8/24798/.TEMP/s_topTEMP900x420-6795.jpeg",
     imageAlt: "A photo of Ruslan Mukhamedvaleev",
@@ -71,7 +91,6 @@ export default async function Publications() {
               <a
                 href={pub.link}
                 target="_blank"
-                rel="noopener noreferrer"
                 aria-label={`Read ${pub.title}`}
               >
                 <div className="mt-0 bg-neutral-100/50 p-6 rounded-lg flex flex-col sm:flex-row sm:justify-between border-neutral-200/50 border hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">

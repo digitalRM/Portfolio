@@ -87,11 +87,11 @@ export default async function Header() {
       </div>
       <div>
         <Image
-          src="/grad.png"
+          src="/ruslanM.jpg"
           alt="Ruslan Mukhamedvaleev's profile photo"
           width={128}
           height={128}
-          className="rounded-md"
+          className="rounded-md aspect-square object-cover"
           priority
           itemProp="image"
         />
