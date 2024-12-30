@@ -178,6 +178,7 @@ export default async function Publications() {
                     />
                     <meta itemProp="dateModified" content={pub.dateModified} />
                     <meta itemProp="publisher" content={pub.publisher} />
+                    <meta itemProp="url" content={pub.link} />
                   </div>
                 </div>
               </a>
@@ -232,6 +233,7 @@ export default async function Publications() {
                   <meta itemProp="datePublished" content={pub.datePublished} />
                   <meta itemProp="dateModified" content={pub.dateModified} />
                   <meta itemProp="publisher" content={pub.publisher} />
+                  <meta itemProp="url" content={pub.link} />
                 </div>
               </div>
             )}
