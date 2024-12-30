@@ -164,12 +164,7 @@ export default async function Experience() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:justify-between">
-            <p
-              className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
-              itemScope
-              itemType="https://schema.org/Organization"
-              itemProp="employedIn"
-            >
+            <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
               <span itemProp="name">{role.company}</span>
             </p>
             <p
