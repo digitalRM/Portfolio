@@ -13,6 +13,23 @@ export default async function AboutMe() {
 
       <div className="mt-6" itemScope itemType="https://schema.org/Person">
         <meta itemProp="name" content="Ruslan Mukhamedvaleev" />
+        <meta itemProp="givenName" content="Ruslan" />
+        <meta itemProp="familyName" content="Mukhamedvaleev" />
+        <meta itemProp="url" content="https://www.ruslan.in" />
+        <meta itemProp="knowsAbout" content="Design" />
+        <meta itemProp="knowsAbout" content="Research" />
+        <meta itemProp="knowsAbout" content="Machine Learning" />
+        <meta itemProp="knowsAbout" content="Web Development" />
+        <meta itemProp="knowsAbout" content="Robotics" />
+        <meta itemProp="knowsAbout" content="Non-profit Web Design" />
+        <meta itemProp="worksFor" content="Koel Labs" />
+        <meta itemProp="worksFor" content="Washington State University" />
+        <meta
+          itemProp="memberOf"
+          content="Legislative Youth Advisory Council"
+        />
+        <meta itemProp="memberOf" content="Mukilteo Robotics" />
+        <meta itemProp="image" content="/ruslanM.jpg" />
         <p
           className="text-sm sm:text-base leading-6 text-neutral-800/80 tracking-[-0.01em]"
           itemProp="description"
