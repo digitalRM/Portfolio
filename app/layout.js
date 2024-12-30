@@ -89,6 +89,7 @@ export default function RootLayout({ children }) {
               "url": "https://www.ruslan.in",
               "image": "https://www.ruslan.in/openGraph.png",
               "sameAs": [
+                "https://www.ruslan.in",
                 "https://github.com/digitalRM",
                 "https://www.linkedin.com/in/ruslan-muk/",
                 "https://www.instagram.com/ruslan_mk11/",
