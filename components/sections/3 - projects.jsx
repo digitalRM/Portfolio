@@ -178,6 +178,17 @@ export default async function Projects() {
           {projects.map((project, index) => (
             <CarouselItem key={project.title} className="">
               <article itemScope itemType="https://schema.org/CreativeWork">
+                <meta itemProp="name" content={project.title} />
+                <meta itemProp="description" content={project.description} />
+                <meta itemProp="url" content={project.link} />
+                <meta itemProp="image" content={project.image} />
+                <meta itemProp="author" content="Ruslan Mukhamedvaleev" />
+                {project.badges && (
+                  <meta
+                    itemProp="keywords"
+                    content={Object.keys(project.badges).join(", ")}
+                  />
+                )}
                 <a
                   href={project.link}
                   target="_blank"
