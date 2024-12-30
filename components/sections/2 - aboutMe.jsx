@@ -16,6 +16,20 @@ export default async function AboutMe() {
         <meta itemProp="givenName" content="Ruslan" />
         <meta itemProp="familyName" content="Mukhamedvaleev" />
         <meta itemProp="url" content="https://www.ruslan.in" />
+        <meta itemProp="sameAs" content="https://www.ruslan.in" />
+        <meta itemProp="sameAs" content="https://github.com/digitalRM" />
+        <meta
+          itemProp="sameAs"
+          content="https://www.linkedin.com/in/ruslan-muk/"
+        />
+        <meta
+          itemProp="sameAs"
+          content="https://www.instagram.com/ruslan_mk11/"
+        />
+        <meta
+          itemProp="sameAs"
+          content="https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/"
+        />
         <meta itemProp="knowsAbout" content="Design" />
         <meta itemProp="knowsAbout" content="Research" />
         <meta itemProp="knowsAbout" content="Machine Learning" />

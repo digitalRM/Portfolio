@@ -66,6 +66,7 @@ export default async function Header() {
             content="Student researcher and developer focused on design, machine learning, and web development. Co-Founder of Koel Labs, Founder of FOYM, and Research Assistant at Washington State University."
           />
           <meta itemProp="url" content="https://www.ruslan.in" />
+          <meta itemProp="sameAs" content="https://www.ruslan.in" />
           <meta itemProp="sameAs" content="https://github.com/digitalRM" />
           <meta
             itemProp="sameAs"
