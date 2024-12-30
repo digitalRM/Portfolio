@@ -59,11 +59,37 @@ export default async function Header() {
           itemType="https://schema.org/Person"
         >
           <span itemProp="name">Ruslan Mukhamedvaleev</span>
+          <meta itemProp="givenName" content="Ruslan" />
+          <meta itemProp="familyName" content="Mukhamedvaleev" />
+          <meta
+            itemProp="description"
+            content="Student researcher and developer focused on design, machine learning, and web development. Co-Founder of Koel Labs, Founder of FOYM, and Research Assistant at Washington State University."
+          />
+          <meta itemProp="url" content="https://www.ruslan.in" />
+          <meta itemProp="sameAs" content="https://github.com/digitalRM" />
+          <meta
+            itemProp="sameAs"
+            content="https://www.linkedin.com/in/ruslan-muk/"
+          />
+          <meta
+            itemProp="sameAs"
+            content="https://www.instagram.com/ruslan_mk11/"
+          />
+          <meta
+            itemProp="sameAs"
+            content="https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/"
+          />
+          <meta itemProp="alumniOf" content="Kamiak High School" />
+          <meta itemProp="affiliation" content="Koel Labs" />
+          <meta itemProp="affiliation" content="Washington State University" />
+          <meta itemProp="affiliation" content="Mukilteo Robotics" />
+          <meta
+            itemProp="affiliation"
+            content="Legislative Youth Advisory Council"
+          />
+          <meta itemProp="affiliation" content="FOYM" />
         </h1>
-        <p
-          className="mt-2 text-sm sm:text-base leading-6 max-w-[570px] text-neutral-800/80"
-          itemProp="description"
-        >
+        <p className="mt-2 text-sm sm:text-base leading-6 max-w-[570px] text-neutral-800/80">
           Design, Research, and Machine Learning.
         </p>
         <nav

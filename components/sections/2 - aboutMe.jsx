@@ -12,6 +12,7 @@ export default async function AboutMe() {
       <div className="mt-3 border-b border-neutral-200" />
 
       <div className="mt-6" itemScope itemType="https://schema.org/Person">
+        <meta itemProp="name" content="Ruslan Mukhamedvaleev" />
         <p
           className="text-sm sm:text-base leading-6 text-neutral-800/80 tracking-[-0.01em]"
           itemProp="description"
