@@ -59,14 +59,10 @@ export default async function Education() {
               <span itemProp="award">GPA {school.gpa}</span>
             </p>
             <p className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80">
-              Expected Graduation:{" "}
-              <span itemProp="endDate">{school.graduation}</span>
+              Expected Graduation: <span>{school.graduation}</span>
             </p>
           </div>
-          <div
-            className="mt-2 text-sm sm:text-base leading-6 text-neutral-600/80"
-            itemProp="extracurricularActivity"
-          >
+          <div className="mt-2 text-sm sm:text-base leading-6 text-neutral-600/80">
             <strong className="font-medium">Extracurriculars:</strong>
             <ul className="flex flex-wrap mt-1">
               {school.extracurriculars.map((activity, index) => (

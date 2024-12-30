@@ -143,20 +143,20 @@ export default async function Experience() {
           key={role.company}
           className="mt-6"
           itemScope
-          itemType="https://schema.org/WorkExperience"
+          itemType="https://schema.org/EmployeeRole"
         >
           <div className="flex">
             <div>
               <h3
                 className="text-lg tracking-tight font-semibold"
-                itemProp="jobTitle"
+                itemProp="roleName"
               >
                 {role.title}
               </h3>
               {role.previousTitle && (
                 <p
                   className="mt-1 mb-1 text-sm sm:text-base font-medium leading-4 text-neutral-800/60 italic"
-                  itemProp="alternateName"
+                  itemProp="roleName"
                 >
                   Previously: {role.previousTitle}
                 </p>
@@ -166,20 +166,22 @@ export default async function Experience() {
           <div className="flex flex-col sm:flex-row sm:justify-between">
             <p
               className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
-              itemProp="hiringOrganization"
+              itemScope
+              itemType="https://schema.org/Organization"
+              itemProp="employedIn"
             >
-              {role.company}
+              <span itemProp="name">{role.company}</span>
             </p>
             <p
               className="mt-2 text-sm sm:text-base font-medium leading-6 text-neutral-800/80"
-              itemProp="dateOccupied"
+              itemProp="startDate"
             >
               {role.date}
             </p>
           </div>
           <div
             className="mt-2 text-sm sm:text-base leading-6 text-neutral-600/80"
-            itemProp="responsibilities"
+            itemProp="description"
           >
             <ol className="list-outside ml-4">
               {role.description.map((desc, index) => (
