@@ -182,7 +182,41 @@ export default async function Projects() {
                 <meta itemProp="description" content={project.description} />
                 <meta itemProp="url" content={project.link} />
                 <meta itemProp="image" content={project.image} />
-                <meta itemProp="author" content="Ruslan Mukhamedvaleev" />
+                <div
+                  itemProp="author"
+                  itemScope
+                  itemType="https://schema.org/Person"
+                >
+                  <meta itemProp="name" content="Ruslan Mukhamedvaleev" />
+                  <meta itemProp="givenName" content="Ruslan" />
+                  <meta itemProp="familyName" content="Mukhamedvaleev" />
+                  <meta
+                    itemProp="description"
+                    content="Student researcher and developer focused on design, machine learning, and web development. Co-Founder of Koel Labs, Founder of FOYM, and Research Assistant at Washington State University."
+                  />
+                  <meta itemProp="url" content="https://www.ruslan.in" />
+                  <meta
+                    itemProp="image"
+                    content="https://www.ruslan.in/ruslanM.jpg"
+                  />
+                  <meta itemProp="sameAs" content="https://www.ruslan.in" />
+                  <meta
+                    itemProp="sameAs"
+                    content="https://github.com/digitalRM"
+                  />
+                  <meta
+                    itemProp="sameAs"
+                    content="https://www.linkedin.com/in/ruslan-muk/"
+                  />
+                  <meta
+                    itemProp="sameAs"
+                    content="https://www.instagram.com/ruslan_mk11/"
+                  />
+                  <meta
+                    itemProp="sameAs"
+                    content="https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/"
+                  />
+                </div>
                 {project.badges && (
                   <meta
                     itemProp="keywords"
