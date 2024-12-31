@@ -23,6 +23,10 @@ export const metadata = {
     "Web Developer",
     "FOYM Founder",
     "Washington State University",
+    "Machine Learning",
+    "Design",
+    "Research Assistant",
+    "Student Developer",
   ],
   authors: [{ name: "Ruslan Mukhamedvaleev" }],
   creator: "Ruslan Mukhamedvaleev",
@@ -89,11 +93,17 @@ export default function RootLayout({ children }) {
               "url": "https://www.ruslan.in",
               "image": "https://www.ruslan.in/openGraph.png",
               "sameAs": [
+                "https://www.ruslanmukhamedvaleev.com",
                 "https://www.ruslan.in",
                 "https://github.com/digitalRM",
                 "https://www.linkedin.com/in/ruslan-muk/",
                 "https://www.instagram.com/ruslan_mk11/",
-                "https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/"
+                "https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/",
+                "https://www.foym.org",
+                "https://www.behance.net/mukhamedvaleev",
+                "https://dribbble.com/RuslanMukhamedvaleev",
+                "https://x.com/mukhamedvaleev",
+                "https://scholar.google.com/citations?user=yci2oWcAAAAJ"
               ],
               "alumniOf": {
                 "@type": "Organization",

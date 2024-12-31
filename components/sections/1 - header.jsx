@@ -80,6 +80,24 @@ export default async function Header() {
             itemProp="sameAs"
             content="https://builders.mozilla.org/profile/ruslan-mukhamedvaleev/"
           />
+          <meta
+            itemProp="sameAs"
+            content="https://www.ruslanmukhamedvaleev.com"
+          />
+          <meta itemProp="sameAs" content="https://www.foym.org" />
+          <meta
+            itemProp="sameAs"
+            content="https://www.behance.net/mukhamedvaleev"
+          />
+          <meta
+            itemProp="sameAs"
+            content="https://dribbble.com/RuslanMukhamedvaleev"
+          />
+          <meta itemProp="sameAs" content="https://x.com/mukhamedvaleev" />
+          <meta
+            itemProp="sameAs"
+            content="https://scholar.google.com/citations?user=yci2oWcAAAAJ"
+          />
           <meta itemProp="alumniOf" content="Kamiak High School" />
           <meta itemProp="affiliation" content="Koel Labs" />
           <meta itemProp="affiliation" content="Washington State University" />
