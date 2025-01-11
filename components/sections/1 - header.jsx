@@ -47,6 +47,39 @@ const social = [
       </svg>
     ),
   },
+  {
+    name: "Research",
+    url: "https://scholar.google.com/citations?user=yci2oWcAAAAJ",
+    ariaLabel: "Visit Ruslan's Google Scholar profile",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5 grayscale"
+        width="512"
+        height="512"
+        fill="none"
+        viewBox="0 0 512 512"
+      >
+        <g clipPath="url(#clip0_2408_411)">
+          <path fill="#4285F4" d="M256 411.12 0 202.667 256 0z"></path>
+          <path fill="#356AC3" d="m256 411.12 256-208.453L256 0z"></path>
+          <path
+            fill="#A0C3FF"
+            d="M256.001 512.002c82.474 0 149.333-66.859 149.333-149.333s-66.859-149.333-149.333-149.333-149.333 66.859-149.333 149.333 66.859 149.333 149.333 149.333"
+          ></path>
+          <path
+            fill="#76A7FA"
+            d="M121.037 298.666c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334z"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_2408_411">
+            <path fill="#fff" d="M0 0h512v512H0z"></path>
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+  },
 ];
 
 export default async function Header() {
