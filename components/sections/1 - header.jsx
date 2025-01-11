@@ -153,7 +153,6 @@ export default async function Header() {
               key={link.name}
               href={link.url}
               target="_blank"
-              rel="noopener noreferrer"
               aria-label={link.ariaLabel}
               className="transition-all inline-flex items-center px-2.5 py-1.5 pr-3 border text-sm leading-4 font-medium tracking-tight rounded-lg text-neutral-800/80 bg-neutral-100 hover:bg-neutral-200/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-500 w-full sm:w-fit border-neutral-200/50 hover:border-neutral-200/75 button-shd"
             >
