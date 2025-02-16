@@ -59,7 +59,7 @@ const roles = [
     description: [
       "Grew the organization to 45 active members who participated during the 2023 - 2024 season as competitors or collegiate mentors (an increase from 23 total members the previous season with a YoY growth of 96%)",
       "As the first-ever Director of Public Relations for Mukilteo Robotics, I created all branding elements from scratch, including colors, fonts, visual elements, and messaging, to ensure a solid and consistent identity.",
-      "Helped raise over $21,000 (in-season costs, not including $11,000 raised for world championship) for the organization via fundraising efforts. Co-writer of Analog Devices grant proposal that secured $5,000 in funding.",
+      "Lead the fundraising of over $18,000 (in-season costs, not including $11,000 raised for world championship) for the organization via fundraising efforts. Co-writer of Analog Devices grant proposal that secured $5,000 in funding two years in a row.",
     ],
     items: [
       {
