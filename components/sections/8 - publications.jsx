@@ -114,7 +114,7 @@ export default async function Publications() {
                   <div>
                     <div className="flex justify-between">
                       <div className="flex gap-1">
-                        <h3 className="text-base font-semibold">
+                        <h3 className="text-base font-semibold line-clamp-1">
                           {pub.company}
                         </h3>
 
@@ -122,7 +122,7 @@ export default async function Publications() {
                           <>
                             <span className="text-base font-semibold">-</span>
                             <h3
-                              className="text-base font-semibold"
+                              className="text-base font-semibold line-clamp-1"
                               itemProp="publisher"
                             >
                               {pub.publisher}

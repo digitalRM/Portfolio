@@ -274,8 +274,8 @@ export default async function Projects() {
                   rel="noopener noreferrer"
                   aria-label={`View ${project.title} project`}
                 >
-                  <div className="bg-neutral-100/50 hover:scale-[102%] group p-2 border-neutral-200 border rounded-[12px] border-neutral-200/50 hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
-                    <div className="rounded-[8px] w-full h-fit bg-neutral-100 group-hover:bg-neutral-100/50 transition-all border-neutral-200 border">
+                  <div className="bg-white hover:scale-[102%] group p-2 border-neutral-200 border rounded-[12px]  hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
+                    <div className="rounded-[7px] w-full h-fit bg-neutral-100 group-hover:bg-neutral-100/50 transition-all border-neutral-200 border">
                       <Image
                         src={project.image}
                         height={400}

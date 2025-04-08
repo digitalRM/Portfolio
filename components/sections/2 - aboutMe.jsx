@@ -1,13 +1,22 @@
 "use server";
 
+import { ArrowRightIcon } from "lucide-react";
+
 export default async function AboutMe() {
   return (
     <section aria-labelledby="about-heading" className="mt-12">
       <h2
         id="about-heading"
-        className="font-semibold tracking-tight text-black text-xl"
+        className="font-semibold tracking-tight text-black text-xl flex items-center gap-2 justify-between"
       >
-        About Me
+        About Me{" "}
+        <a
+          href="/bio"
+          className="bg-blue-50 text-blue-800 border-blue-200 border px-2 py-1 rounded-full text-sm cursor-pointer group"
+        >
+          View Biography
+          <ArrowRightIcon className="w-4 h-4 inline-block group-hover:translate-x-0.5 transition-all -mt-0.5 ml-1" />
+        </a>
       </h2>
       <div className="mt-3 border-b border-neutral-200" />
 
