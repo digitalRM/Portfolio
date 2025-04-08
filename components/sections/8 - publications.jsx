@@ -38,13 +38,12 @@ const publications = [
       "Anika Krishnan",
     ],
     date: "May 2024",
-    datePublished: "2024-05-04",
     dateModified: "2024-05-04",
     released: true,
     badge: "Research",
     company: "Washington State University",
     abstract:
-      "Over 270,000 Ukrainians have come to the United States since the February 24th, 2022, full-scale military invasion of Ukraine by the Russian Federation.1 This has raised demand for Ukrainian language materials that some public libraries have struggled to meet. In order to facilitate the acquisition pipeline for libraries developing new Ukrainian language collections, we sought to identify libraries with strong existing collections, as well as those libraries that may need assistance with building these collections. We used OCLC data on Ukrainian language titles and their holding libraries. Two Washington State high school students with data science skills assisted us in the process, creating an interactive map showing the location of Ukrainian books in American libraries. We hope this map will be useful for improving the state of Ukrainian language collections to serve communities in the United States.",
+      "Over 270,000 Ukrainians have come to the United States since the February 24th, 2022, full-scale military invasion of Ukraine by the Russian Federation. This has raised demand for Ukrainian language materials that some public libraries have struggled to meet. In order to facilitate the acquisition pipeline for libraries developing new Ukrainian language collections, we sought to identify libraries with strong existing collections, as well as those libraries that may need assistance with building these collections.",
     publisher: "Ukrainian Book Project",
     link: "https://www.ukrainianbookproject.com/publications/mapping-ukrainian-collections-in-us-public-libraries",
     short:
@@ -55,7 +54,6 @@ const publications = [
     title: "Locations of Ukrainian-language books based on OCLC data",
     authors: ["Ruslan Mukhamedvaleev", "Emily Cukier", "Gabriella Reznowski"],
     date: "August 2024",
-    datePublished: "2024-08-20",
     dateModified: "2024-08-20",
     released: true,
     badge: "Research",
@@ -63,7 +61,7 @@ const publications = [
     publisher: "Ukrainian Book Project",
     link: "https://www.ukrainianbookproject.com/publications/locations-of-ukrainian-language-books-based-on-oclc-data",
     abstract:
-      "We sought to create an interactive map of Ukrainian books across American public libraries. Our primary data source for this project was OCLC, a global library organization that compiles standardized library catalogs and holding data for its members. We used it to obtain catalog records for books in the Ukrainian language, library holdings data for the books, and library type and location data (geographic coordinates). We used Tableau software to create the visualization. Note that holding data does not guarantee that books are available to the public for reading or checkout. We hope this map will be useful for improving the state of Ukrainian language collections to serve communities in the United States.",
+      "We sought to create an interactive map of Ukrainian books across American public libraries. Our primary data source for this project was OCLC, a global library organization that compiles standardized library catalogs and holding data for its members.",
     short:
       "We sought to create an interactive map of We sought to create an interactive map of Ukrainian books across American public libraries. Our primary data source for this project was OCLC, a global library organization that compiles standardized library catalogs and holding data for its members. We used it to obtain catalog records for books in the Ukrainian language, library holdings data for the books, and library type and location data (geographic coordinates).",
   },
@@ -72,7 +70,6 @@ const publications = [
     title: "Exploring Ukrainian Language Collections in US Libraries",
     authors: ["Emily Cukier", "Ruslan Mukhamedvaleev", "Gabriella Reznowski"],
     date: "November 2024",
-    datePublished: "2024-11-08",
     dateModified: "2024-12-28",
     released: true,
     badge: "Research",
@@ -80,7 +77,7 @@ const publications = [
     publisher: "Ukrainian Book Project",
     link: "https://www.ukrainianbookproject.com/publications/exploring-ukrainian-language-collections-in-us-libraries",
     abstract:
-      "Russia began the invasion of Ukraine on February 24, 2022. This invasion does not just affect people and their sovereignty, but the entire Ukrainian culture is under attack: Russia's bombing targets specifically include Ukrainian libraries and other cultural heritage institutions. Ukrainian advocacy groups have tried to encourage collecting at U.S. libraries but have been met with resistance, and continued efforts are slow. Many US libraries don't know where to order Ukrainian books, which ones to choose from, or how to catalog them, especially if they don't have Ukrainian speakers on staff. This project aims to shed light on the landscape of collecting. It is the first step for us to identify and overcome barriers to building Ukrainian collections in US public libraries.",
+      "Russia began the invasion of Ukraine on February 24, 2022. This invasion does not just affect people and their sovereignty, but the entire Ukrainian culture is under attack: Russia's bombing targets specifically include Ukrainian libraries and other cultural heritage institutions. Ukrainian advocacy groups have tried to encourage collecting at U.S. libraries but have been met with resistance, and continued efforts are slow.",
     short:
       "Ukrainian advocacy groups have tried to encourage collecting at U.S. libraries but have been met with resistance, and continued efforts are slow. Many US libraries don't know where to order Ukrainian books, which ones to choose from, or how to catalog them, especially if they don't have Ukrainian speakers on staff. This project aims to shed light on the landscape of collecting. It is the first step for us to identify and overcome barriers to building Ukrainian collections in US public libraries.",
   },
@@ -113,7 +110,7 @@ export default async function Publications() {
                 target="_blank"
                 aria-label={`Read ${pub.title}`}
               >
-                <div className="mt-0 bg-neutral-100/50 p-6 rounded-lg flex flex-col sm:flex-row sm:justify-between border-neutral-200/50 border hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
+                <div className="mt-0 bg-white p-6 rounded-lg flex flex-col sm:flex-row sm:justify-between border-neutral-200 border hover:border-neutral-300/50 hover:bg-neutral-200/50 transition-all">
                   <div>
                     <div className="flex justify-between">
                       <div className="flex gap-1">

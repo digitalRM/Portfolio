@@ -45,6 +45,14 @@ const projects = [
       "Platform for tracking Ukrainian language collections in US libraries.",
   },
   {
+    title: "Ukrainian Book Project Search Tool",
+    released: true,
+    image: "/SearchTool.jpeg",
+    link: "https://books.ukrainianbookproject.com/",
+    description:
+      "Search and explore libraries in the United States (with some libraries from other countries). Filter by type and location to find specific institutions.",
+  },
+  {
     title: "UW CSE 455 Kernal Demo Site",
     released: true,
     badges: {
@@ -68,6 +76,14 @@ const projects = [
     image: "/waYouth.jpeg",
     link: "https://www.washingtonyouthalliance.org/",
     description: "Official website for Washington Youth Alliance organization.",
+  },
+  {
+    title: "Poetry Sentiment Analysis",
+    released: true,
+    image: "/PoetrySentimentAnalysis.jpeg",
+    link: "https://github.com/digitalRM/Poetry-Sentiment-Analyzer",
+    description:
+      "A web application that analyzes the emotional content of poetry using Natural Language Processing (NLP) techniques.",
   },
   {
     title: "Accessible Articles",
@@ -112,6 +128,14 @@ const projects = [
     link: "https://www.mukilteorobotics.org/",
     description:
       "I designed and developed the website for Mukilteo Robotics, a local non-profit organization that provides free competitive robotics access in the Mukilteo area. I wanted the design to have a professional and modern look to solidify and legitimize the organization for sponsor outreach.",
+  },
+  {
+    title: "Research Data Tool",
+    released: true,
+    image: "/ResearchDataTool.png",
+    link: "https://data-tool.ukrainianbookproject.com/",
+    description:
+      "This tool utilizes the OCLC Registry API and requires that you have access to the API. This tool is entirely open source and available on GitHub.",
   },
   {
     title: "COVID-19 Machine Learning Analysis",

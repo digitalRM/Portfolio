@@ -1,6 +1,12 @@
-import { Inter } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -145,7 +151,10 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body style={{ background: "#FFF" }} className={inter.className}>
+      <body
+        style={{ background: "#FFF" }}
+        className={`${geistSans.className} antialiased`}
+      >
         {children}
       </body>
     </html>

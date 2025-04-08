@@ -8,9 +8,10 @@ const roles = [
     company: "Koel Labs",
     date: "Aug 2024 - Present",
     description: [
-      "Lead design and development of MVP shown off at Mozilla Builders Demo Day.",
-      "Designed and developed the brand from the ground up, from logos to graphics to typography, culminating in a new website and brand materials.",
-      "Leading product design and development, including brand identity, landing page, web application UI/UX, and user research to create an intuitive and cohesive experience.",
+      "Secured $80,000+ in credits & grants from companies like Amazon, Google, and Mozilla. Lead the design and creation of our pitch decks.",
+      "We currently hold the SoTA model (#1 top performing) for phonemic transcription machine-learning models (beating out a model created by Facebook).",
+      "Led design and programming of our minimum viable product (MVP) for presentation in San Francisco at Mozilla's Demo Day. Solo brand and product designer.",
+      "Designed brand from the ground up, from logos to graphics to typography, culminating in a new website and brand materials.",
     ],
     items: [
       {
@@ -32,10 +33,10 @@ const roles = [
     icon: "/wsu.png",
     date: "Aug 2023 - Present",
     description: [
-      "Created huge XLSX dataset of libraries by developing a Python script to collect data from WorldCat API.",
-      "Collected, cleaned, and filtered thousands of rows of data before making a visualization using Tableau.",
-      "Co-authored research poster for presentation at WSU Academic Showcase 24 & WSU Everett Symposium.",
-      "Co-authoring research paper about the state of Ukrainian literature across U.S. libraries. Submitted for ACH 24.",
+      "Developed algorithm for extracting specialized institution holdings from OCLC (Online Computer Library Center), enabling WSU libraries to efficiently collect 200k+ rows of data for research purposes.",
+      "Led technical side of research by creating APIs, algorithms, and programs that facilitated research initiatives, resulting in two published open-source web tools now used by other libraries.",
+      "Created and published multiple interactive Tableau visualizations for librarians with 2200+ views/uses, transforming complex data into accessible insights.",
+      "Co-authored 4 research works including 2 presentations, and 2 research posters (presented at WSU Academic Showcase & WSU Everett Symposium), and currently working on a paper for publication.",
     ],
     items: [
       {
@@ -57,9 +58,11 @@ const roles = [
     company: "Mukilteo Robotics",
     date: "Nov 2022 - Present",
     description: [
+      "Lead the fundraising of over $18,000 for the organization via fundraising efforts. Co-writer of Analog Devices grant proposal that secured $5,000 in funding two years in a row.",
       "Grew the organization to 45 active members who participated during the 2023 - 2024 season as competitors or collegiate mentors (an increase from 23 total members the previous season with a YoY growth of 96%)",
+      "Implemented new programs for the retention of women members, leading to a 0% attrition rate for the first time in MR history.",
+      "Qualified for the state competition 3 years in a row. Main programmer for my team, creating driver and autonomous functions for the robot in Python, Blockly, and C++. Won local tournament.",
       "As the first-ever Director of Public Relations for Mukilteo Robotics, I created all branding elements from scratch, including colors, fonts, visual elements, and messaging, to ensure a solid and consistent identity.",
-      "Lead the fundraising of over $18,000 (in-season costs, not including $11,000 raised for world championship) for the organization via fundraising efforts. Co-writer of Analog Devices grant proposal that secured $5,000 in funding two years in a row.",
     ],
     items: [
       {
@@ -80,10 +83,11 @@ const roles = [
     company: "Legislative Youth Advisory Council (LYAC)",
     date: "July 2023 - Present",
     description: [
-      "One of twelve students selected by the lieutenant governor's office from across Washington State to serve as a youth advisor to state legislators. Recently elected to serve as Vice Chairman for next year.",
-      "Working on language access in education legislation to help ELL students get the support they need.",
-      "Panelist for the 2024 Washington State Action Day, along with Senator Torres, Katherine Mahoney, and Stacy Osoria. Spoke about the importance of youth voice in policy-making to over 80+ in-person attendees. ",
-      "Panelist for The Role of Artificial Intelligence in Education LEVinar hosted by the League of Education Voters. Discussed the potential benefits and drawbacks of AI in education to over 35+ live attendees.",
+      "1 of 24 students selected by the lieutenant governor's office from across all of Washington State to serve as an advisor to state legislators, representing 1.6 million young people in Washington. Elected to serve as Vice Chairman.",
+      "Leading weekly meetings to a cohort of 24 members. Developed long-term plans for outreach about supported legislation and applications.",
+      "Lead outreach to over 2,500+ Washington State schools via email and helped organize in-person Action Day at the state capitol with 100+ attendees.",
+      "Implemented Senate Bill 5462 (promotion of inclusive learning standards in public schools) with the Washington Office of Superintendent of Public Instruction (OSPI).",
+      "Advocated for language access in education legislation to help ELL students get the support they need on a state level.",
     ],
     items: [
       {
@@ -98,8 +102,11 @@ const roles = [
     company: "FOYM.",
     date: "July 2023 - Present",
     description: [
-      "Collaborating with nonprofits and organizations to design and develop websites that enhance their reach and influence, all at no cost.",
-      "Designing, developing, and programming modern websites using technologies like HTML, CSS, Figma, React, Next.JS, & Tailwind CSS.",
+      "Founded an organization with a mission of collaborating with nonprofits and organizations to design and develop websites that enhance their reach and influence, completely free of charge.",
+      "Personally designed and developed 6 open-source website templates for organizations to use freely, using technologies like React, Next.js, and Tailwind CSS.",
+      "Received 30,000+ visits to the foym.org website throughout the organization's lifetime.",
+      "Fostered 2 long-term partnerships with local nonprofits in the state of Washington, providing ongoing design and development services.",
+      "Featured in the Mukilteo Beacon local news for this nonprofit technology assistance initiative.",
     ],
     items: [
       {
