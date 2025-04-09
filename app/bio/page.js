@@ -128,11 +128,7 @@ export default async function BioPage() {
             </h3>
             <div className="border-t border-neutral-200 pt-4">
               <ul className="text-sm sm:text-base leading-6 text-neutral-800/80 tracking-[-0.01em] space-y-3">
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="Washington State Youth Action Day '24"
@@ -141,11 +137,7 @@ export default async function BioPage() {
                   <span className="font-medium">Panelist</span> - Washington
                   State Youth Action Day '24
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="The Role of Artificial Intelligence in Education LEVinar '24"
@@ -154,11 +146,7 @@ export default async function BioPage() {
                   <span className="font-medium">Panelist</span> - The Role of
                   Artificial Intelligence in Education LEVinar '24
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="Washington State University Academic Showcase '24"
@@ -167,11 +155,7 @@ export default async function BioPage() {
                   <span className="font-medium">Presenter (Poster)</span> -
                   Washington State University Academic Showcase '24
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="Washington State University Everett Research Symposium '24"
@@ -180,11 +164,7 @@ export default async function BioPage() {
                   <span className="font-medium">Presenter (Poster)</span> -
                   Washington State University Everett Research Symposium '24
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="Association for Computers and the Humanities Conference '24"
@@ -195,11 +175,7 @@ export default async function BioPage() {
                   </span>{" "}
                   - Association for Computers and the Humanities Conference '24
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="Mozilla Demo Day in San Francisco '24"
@@ -210,21 +186,13 @@ export default async function BioPage() {
                   </span>{" "}
                   - Mozilla Demo Day in San Francisco '24
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta itemProp="name" content="Stack Overflow Podcast '25" />
                   <meta itemProp="startDate" content="2025" />
                   <span className="font-medium">Podcast Guest</span> - Stack
                   Overflow Podcast '25
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="Washington Library Association Conference '25"
@@ -235,11 +203,7 @@ export default async function BioPage() {
                   </span>{" "}
                   - Washington Library Association Conference '25
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="University of Washington DubHacks' Next Demo Day '25"
@@ -250,11 +214,7 @@ export default async function BioPage() {
                   </span>{" "}
                   - University of Washington DubHacks' Next Demo Day '25
                 </li>
-                <li
-                  itemProp="subjectOf"
-                  itemScope
-                  itemType="https://schema.org/Event"
-                >
+                <li>
                   <meta
                     itemProp="name"
                     content="University of Washington Research Symposium '25"
